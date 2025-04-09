@@ -354,3 +354,56 @@ body {
   padding: 4px 16px;
   letter-spacing: 0.1em;
 }
+
+.single_main_thumb-wrapper {
+  margin-top: 16px;
+}
+
+.single_main_contents h2 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  background: #FCF2E4;
+  padding: 16px 24px;
+  margin-top: 80px;
+  box-shadow: 2px 2px 4px rgba(170, 170, 170, 0.16);
+}
+
+.single_main_contents h3 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #001c2b;
+  margin-top: 40px;
+}
+
+.single_main_contents p {
+  margin-top: 40px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+.single_main_btn-wrapper {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.single_main_btn {
+  background: #cb7aa6;
+  color: #fff;
+  letter-spacing: 0.1em;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.single_sidebar {
+  margin-top: 120px;
+}
+
+.single_sidebar_boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
