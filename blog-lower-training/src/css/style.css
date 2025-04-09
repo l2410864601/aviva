@@ -333,6 +333,12 @@ body {
   font-weight: bold;
   letter-spacing: 0.1em;
 }
+.single_main_meta {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .single_main_meta-date {
 
