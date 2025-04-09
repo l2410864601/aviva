@@ -406,4 +406,42 @@ body {
 .single_sidebar_boxes {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 0;
+}
+
+.single_sidebar_bnr-wrapper {
+  margin-top: 40px;
+}
+
+.single_sidebar-box {
+  width: 100%;
+}
+
+.single_sidebar-box_head {
+  background: #FCF2E4;
+}
+
+.single_sidebar-box_head-txt {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 16px 24px;
+  letter-spacing: 0.1em;
+}
+
+.single_sidebar-box_contents {
+  margin-top: 16px;
+}
+
+.single_sidebar-cat {
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(170, 170, 170, 0.16);
+}
+
+.single_sidebar-cat_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  position: relative;
 }
