@@ -445,3 +445,53 @@ body {
   padding: 16px 24px;
   position: relative;
 }
+
+.single_sidebar-cat_link::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  border-radius: 4px;
+  background: #cb7aa6;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.single_sidebar-cat_link {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.single_sidebar-cat_count {
+  font-size: 12px;
+  color: #fff;
+  background: #cb7aa6;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.single_sidebar-recommend_item {
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(170, 170, 170, 0.16);
+}
+
+:not(:first-child) {
+  margin-top: 16px;
+}
+
+.single_sidebar-recommend_link {
+  display: flex;
+  align-items: center;
+}
+
+.single_sidebar-recommend_thumb-wrapper {
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.single_sidebar-recommend_title {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  padding: 8px 16px;
+}
