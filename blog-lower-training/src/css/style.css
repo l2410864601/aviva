@@ -341,5 +341,16 @@ body {
 }
 
 .single_main_meta-date {
+  color: #707070;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
 
+.single_main_meta-cat {
+  background: #cb7aa6;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px 16px;
+  letter-spacing: 0.1em;
 }
