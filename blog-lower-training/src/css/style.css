@@ -322,3 +322,18 @@ body {
 }
 
 /* -----------single---------- */
+
+.single_contents {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.single_main_title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.single_main_meta-date {
+
+}
