@@ -95,6 +95,19 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 1080px) {
+  header-nav_link {
+    padding: 4px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom-color 0.24s;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+.header-nav_link:hover {
+  border-block-color: #fff;
+}
+
 /* ---------- top ---------- */
 
 .main {
