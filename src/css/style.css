@@ -119,11 +119,23 @@ body {
   padding: 64px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 96px 0;
+  }
+}
+
 .top-title {
   color: #008db7;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .top-title {
+    font-size: 22px;
+  }
 }
 
 .top-title-sub {
@@ -139,14 +151,17 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-.posts {
-  margin-right: auto;
-  margin-left: auto;
+  .posts {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .post {
   box-shadow: 2px 2px 4px rgba(170, 170, 170, 0.16);
 }
+
+
 
 @media screen and (min-width: 768px) {
   .post_link {
@@ -164,8 +179,32 @@ body {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .post_thumb-wrapper {
+    width: 272px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .post_thumb {
+    transition: transform 0.36s;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .post:hover .post_thumb {
+    transform: scale(1.06);
+  }
+}
+
 .post_content {
   padding: 24px 16px;
+}
+
+@media screen and (min-width: 768px) {
+.post_content {
+  padding: 8px 32px;
 }
 
 .post_meta {
@@ -198,6 +237,13 @@ body {
   font-weight: bold;
   margin-top: 16px;
 }
+
+@media screen and (min-width: 768px) {
+  .post_title {
+    font-size: 22px;
+  }
+}
+
 
 .pagination {
   display: flex;
