@@ -25,7 +25,8 @@ body {
   .header {
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: space-between;
+    padding: 0 24px;
   }
 }
 
@@ -97,7 +98,7 @@ body {
 
 @media screen and (min-width: 1080px) {
   header-nav_link {
-    padding: 4px;
+    padding-top: 4px;
     border-bottom: 4px solid transparent;
     transition: border-bottom-color 0.24s;
   }
@@ -105,9 +106,13 @@ body {
 
 @media screen and (min-width: 1080px) {
 .header-nav_link:hover {
-  border-block-color: #fff;
+  border-bottom-color: #fff;
 }
 
+@media screen and (min-width: 1080px) {
+  .header-nav_link:hover {
+    border-bottom: 5px solid #fff;
+}
 /* ---------- top ---------- */
 
 .main {
