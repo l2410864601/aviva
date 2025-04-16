@@ -37,6 +37,7 @@ body {
   display: inline-block;
 }
 
+
 .header-logo_link {
   height: 100%;
   display: flex;
@@ -46,6 +47,14 @@ body {
 .header-nav {
   padding: 0 16px;
   background: #e8e8e8;
+}
+
+@media screen and (min-width: 1080px) {
+  .header-nav {
+    background: transparent;
+    padding: 0;
+
+  }
 }
 
 .header-nav_list {
@@ -59,11 +68,23 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header-nav_list {
+    justify-content: center;
+  }
+}
+
+
 .header-nav_item {
   font-weight: bold;
   white-space: nowrap;
 }
 
+@media screen and (min-width: 1080px) {
+  .header-nav_item {
+    color: #fff;
+  }
+}
 .header-nav_item:not(:first-child) {
   margin-left: 32px;
 }
