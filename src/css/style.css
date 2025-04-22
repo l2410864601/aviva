@@ -179,13 +179,6 @@ body {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-  .post_thumb-wrapper {
-    width: 272px;
-    flex-shrink: 0;
-  }
-}
-
 @media screen and (min-width: 1080px) {
   .post_thumb {
     transition: transform 0.36s;
@@ -195,6 +188,14 @@ body {
 @media screen and (min-width: 1080px) {
   .post:hover .post_thumb {
     transform: scale(1.06);
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .post_thumb-wrapper {
+    width: 272px;
+    flex-shrink: 0;
   }
 }
 
