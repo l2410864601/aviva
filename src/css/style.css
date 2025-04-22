@@ -356,6 +356,12 @@ body {
   font-weight: bold;
 }
 
+@media screen and (min-width: 768px) {
+  .single_content h1 {
+    font-size: 32px;
+  }
+}
+
 .single_content p {
   margin-top: 40px;
   line-height: 2;
