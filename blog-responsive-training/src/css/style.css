@@ -295,6 +295,12 @@ body {
   gap: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .posts__col-4 > .post {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
 .posts__col-3 {
   gap: 24px;
 }
