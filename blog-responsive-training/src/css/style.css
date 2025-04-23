@@ -626,7 +626,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  ..single_sidebar-recommend_title {
+  .single_sidebar-recommend_title {
     padding: 16px;
   }
 }
