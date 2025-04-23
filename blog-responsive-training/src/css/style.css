@@ -473,6 +473,12 @@ body {
   box-shadow: 2px 2px 4px rgba(170, 170, 170, 0.16);
 }
 
+@media screen and (min-width: 768px) {
+  .single_main_contents h2 {
+    font-size: 24px;
+  }
+}
+
 .single_main_contents h3 {
   font-size: 18px;
   font-weight: bold;
@@ -505,6 +511,14 @@ body {
 
 .single_sidebar {
   margin-top: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .single_sidebar {
+    width: 30%;
+    margin-top: 0;
+    margin-left: 40px;
+  }
 }
 
 .single_sidebar_boxes {
@@ -587,6 +601,12 @@ body {
 .single_sidebar-recommend_link {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .single_sidebar-recommend_link {
+    display: block;
+  }
 }
 
 .single_sidebar-recommend_thumb-wrapper {
