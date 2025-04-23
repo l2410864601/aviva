@@ -301,8 +301,20 @@ body {
   }
 }
 
+@media screen and (min-width: 1080px) {
+  .posts__col-4 > .post {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
 .posts__col-3 {
   gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .posts__col-3 > .post {
+    width: calc((100% - 48px) / 3);
+  }
 }
 
 .pagination {
