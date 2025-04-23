@@ -613,11 +613,22 @@ body {
   width: 120px;
   flex-shrink: 0;
 }
+@media screen and (min-width: 768px) {
+  .single_sidebar-recommend_thumb-wrapper {
+    width: 100%;
+  }
+}
 
 .single_sidebar-recommend_title {
   font-size: 12px;
   letter-spacing: 0.1em;
   padding: 8px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  ..single_sidebar-recommend_title {
+    padding: 16px;
+  }
 }
 
 /* ---------- footer ---------- */
