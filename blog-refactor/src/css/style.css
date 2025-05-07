@@ -180,78 +180,82 @@ body {
   margin-right: auto;
 }
 
-.post {
+.m_posts {
+  margin-top: 56px;
+}
+
+.m_post {
   box-shadow: 2px 2px 4px rgba(170, 170, 170, 0.16);
 }
 
-.post:not(:first-child) {
+.m_post:not(:first-child) {
   margin-top: 24px;
 }
 
 @media screen and (min-width: 768px) {
-  .post_link {
+  .m_post_link {
     display: flex;
   }
 }
 
-.post_thumb-wrapper {
+.m_post_thumb-wrapper {
   overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-  .post_thumb-wrapper {
+  .m_post_thumb-wrapper {
     width: 272px;
     flex-shrink: 0;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .post_thumb {
+  .m_post_thumb {
     transition: transform 0.36s;
   }
 }
 
 @media screen and (min-width: 1080px) {
-  .post:hover .post_thumb {
+  .m_post:hover .m_post_thumb {
     transform: scale(1.06);
   }
 }
 
-.post_content {
+.m_post_content {
   padding: 24px 16px;
 }
 
 @media screen and (min-width: 768px) {
-  .post_content {
+  .m_post_content {
     padding: 8px 32px;
   }
 }
 
-.post_title {
+.m_post_title {
   font-size: 18px;
   font-weight: bold;
   margin-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
-  .post_title {
+  .m_post_title {
     font-size: 22px;
   }
 }
 
-.post_meta {
+.m_post_meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.post_meta-date {
+.m_post_meta-date {
   color: var(--gray-color03);
   font-size: 12px;
   font-weight: bold;
 }
 
-.post_meta-cat {
+.m_post_meta-cat {
   color: var(--primary-color);
   font-size: 12px;
   font-weight: bold;
@@ -264,7 +268,7 @@ body {
   border-radius: 4px;
 }
 
-.pagination {
+.m_pagination {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,7 +276,7 @@ body {
   gap: 8px;
 }
 
-.pagination_numbers {
+.m_pagination_numbers {
   font-weight: bold;
   width: 40px;
   height: 40px;
@@ -283,22 +287,22 @@ body {
   background: var(--white-color);
 }
 
-.pagination_numbers__current {
+.m_pagination_numbers__current {
   color: var(--white-color);
   border-color: var(--primary-color);
   background: var(--primary-color);
 }
 
-.pagination_numbers__between {
+.m_pagination_numbers__between {
   font-size: 14px;
   border: none;
 }
 
-.pagination_numbers__next {
+.m_pagination_numbers__next {
   position: relative;
 }
 
-.pagination_numbers__next::before {
+.m_pagination_numbers__next::before {
   content: "";
   width: 8px;
   height: 8px;
