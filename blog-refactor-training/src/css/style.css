@@ -1,4 +1,33 @@
 @charset "UTF-8";
+
+/* ------------------変数設定------------------ */
+
+:root {
+  /* 色管理用の変数 */
+  --white-color: #ffffff;
+  --black-color: #001c2b;
+  --gray-color: #fafafa;
+  --gray-color02: #d3d3d3;
+  --gray-color03: #707070;
+  --primary-color: #fcf2e4;
+  --accent-color02: #cb7aa6;
+}
+
+:root {
+  /* コンテンツ幅管理用 */
+  --content-width: 1080px
+}
+
+
+:root {
+	/* z-index管理用の変数 */
+	--z-index-back: -1;
+	--z-index-default: 1;
+	--z-index-header: 100;
+	--z-index-menu: 150;
+	--z-index-modal: 200;
+}
+
 /* ---------- base ---------- */
 body {
   color: #001c2b;
