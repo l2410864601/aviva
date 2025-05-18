@@ -120,7 +120,94 @@ body {
 /* ---------- module ---------- */
 
 /* ---------- top ---------- */
+.top_kv {
+  height: 100vh;
+  background: linear-gradient(rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)),
+  url(../img/bg_kv.jpg) center top / cover;
+}
 
+.top_kv-inner {
+  position: relative;
+  height: 100%;
+}
+
+.top_kv_box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:  translate(-50%,-50%);
+  text-align: center;
+}
+
+.top_kv_copy {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white-color);
+  text-shadow: 2px 2px 2px rgba(170, 170, 170, 0.16);
+}
+
+.top_kv_sub-copy {
+  margin-top: 16px;
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+.top_kv_btn-wrapper {
+  width: 264px;
+  height: 60px;
+  margin: 40px auto 0;
+}
+
+.top_kv-scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top_kv-scroll_txt {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.top_kv_-scroll_arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 8px auto 0;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.m_btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.16);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.m_btn__mail {
+  background: var(--accent-color);
+}
+
+.m_btn__mail::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/btn_email.svg) center / contain no-repeat;
+  margin-left: 8px;
+}
 /* ---------- service ---------- */
 
 /* ---------- case ---------- */
