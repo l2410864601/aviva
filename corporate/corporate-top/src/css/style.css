@@ -263,6 +263,31 @@ body {
 .top_problem-post_txt {
   margin-top: 24px;
 }
+
+.top_suggestion {
+  padding: 120px 0;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.top_suggestion::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 32px;
+  border-style: solid;
+  border-color: var(--primary-color) transparent transparent transparent;
+}
+
+.top_suggestion_txt {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white-color);
+  padding: 0 8px;
+}
 /* ---------- service ---------- */
 
 /* ---------- case ---------- */
