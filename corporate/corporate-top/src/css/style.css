@@ -79,7 +79,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   height: 100%;
-  /* color: var(--white-color); */
+  color: var(--white-color);
 }
 
 .l_header-logo_link {
@@ -207,6 +207,61 @@ body {
   height: 24px;
   background: url(../img/btn_email.svg) center / contain no-repeat;
   margin-left: 8px;
+}
+
+.m_section-title {
+  position: relative;
+}
+
+.m_section-title::before,
+.m_section-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 24px;
+  background: var(--primary-color);
+}
+
+.m_section-title::before {
+  left: 0;
+}
+
+.m_section-title::after {
+  right: 0;
+}
+
+.m_section-title_main {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 16px;
+}
+.m_section-title_sub {
+  color: var(--accent-color);
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+.top_problem-post {
+  margin: 48px auto 0;
+  max-width: var(--content-width-lg);
+}
+
+.top_problem-post:not(:first-child) {
+  margin-top: 40px;
+}
+
+.top_problem-post_title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.top_problem-post_txt {
+  margin-top: 24px;
 }
 /* ---------- service ---------- */
 
