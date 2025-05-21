@@ -496,11 +496,37 @@ body {
 }
 
 /* ---------- .top_info ---------- */
+.top_info:nth-child(2n) {
+  background-color: var(--gray-color02);
+}
+
+.top_info_img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.top_info_block {
+  position: relative;
+  margin-top: 24px;
+}
+
+.top_info_block::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: calc(100% - 140px);
+  background: var(--primary-color);
+}
+
 
 /* ---------- service ---------- */
 
 /* ---------- case ---------- */
 
 /* ---------- company ---------- */
+
 
 /* ---------- contact ---------- */
