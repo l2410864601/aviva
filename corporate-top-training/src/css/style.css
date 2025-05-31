@@ -1,17 +1,143 @@
 @charset "UTF-8";
 
 /* ---------- root ---------- */
+:root {
+    /* 色管理用の変数 */
+    --white-color: #fff;
+    --black-color: #001c2b;
+    --gray-color: #fafafa;
+    --gray-color02: #ccc;
+    --gray-color03: #f2f2f2;
+    --gray-color04: #707070;
+    --primary-color: #ffbb1e;
+    --accent-color: #ff9158;
+}
 
+:root {
+    /* コンテンツ幅の変数 ??*/
+    --content-width-sm: 800px;
+    --content-width: 936px;
+    --content-width-lg: 1080px;
+}
+
+:root {
+    /* z-index管理用の変数 */
+    --z-index-back: -1;
+    --z-index-dafault: 1;
+    --z-index-page-top: 50;
+    --z-index-header: 100;
+    --z-index-menu: 150;
+    --z-index-modal: 200;
+}
 
 /* ---------- base ---------- */
+body {
+    color: var(--black-color);
+    font-family: "Noto Sans JP" , sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+}
 
 
 /* ---------- layout ---------- */
+.l_container-sm,
+.l_container-lg,
+.l_container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+}
 
+.l_container-sm {
+    max-width: calc(var(--content-width-sm) + 32px);
+}
 
+.l_container {
+    max-width: calc(var(--content-width) + 32px);
+}
+
+.l_container-lg {
+    min-width: calc(var(--content-width-lg) + 32px);
+}
+
+.l_contents {
+    padding: 120px 0;
+}
+
+.l_page-main {
+    padding-top: 80px;
+}
 /*---------- module ----------*/
+.l_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: var(--z-index-header);
+    width: 100%;
+    height: 120px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.l_header-logo {
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Roboto" , sans-serif;
+}
 
+.l_header-nav {
+    display: none;
+}
+
+.l_header-nav_list {
+    display: flex;
+    gap: 56px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.l_header-nav_item {
+    color: var(--white-color);
+    font-size: 14px;
+}
+
+.m_hamburger {
+    display: block;
+    width: 32px;
+    height: 28px;
+    position: relative;
+    z-index: var(--z-index-modal);
+    border: none;
+    background: transparent;
+}
+
+.m_hamburger-bar {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: var(--white-color);
+}
+
+.m_hamburger-bar:nth-child(1) {
+    top: 0;
+}
+
+.m_hamburger-bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.m_hamburger-bar:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+}
 /*---------- top ----------*/
 
 
