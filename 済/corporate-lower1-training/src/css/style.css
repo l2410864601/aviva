@@ -301,6 +301,54 @@ body {
   content: "CASE";
 }
 
+.m_kv {
+  color: var(--white-color);
+  background: linear-gradient(rgba(0,28,43,0.3),rgba(0,28,43,0.3)),
+  url(../img/bg_kv.jpg) center/cover;
+  height: 400px;
+  position: relative;
+}
+
+.m_kv_contents {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.m_kv_title {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+}
+
+.m_kv_title::before {
+  width: 100%;
+  font-size: 48px;
+  color: rgba(255, 187, 30, 0.6);
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-index-back);
+}
+@media screen and (min-width: 768px) {
+  .m_kv_title::before {
+    font-size: 64px;
+  }
+}
+
+.m_kv_title__service::before {
+  content: "SERVICE";
+}
+
+.m_kv_desc {
+  text-align: center;
+  font-weight: bold;
+  color: var(--white-color);
+}
 /*---------- top ----------*/
 
 .top_kv {
@@ -480,3 +528,104 @@ body {
 /*---------- contact ----------*/
 
 /*---------- service ----------*/
+
+.service_contents {
+  padding: 120px 0;
+}
+
+.service_contents_desc {
+  margin-top: 64px;
+}
+
+.service_faq {
+  padding: 120px 0;
+  background: var(--gray-color);
+}
+.service_faq_body {
+  margin-top: 64px;
+}
+.service_faq_unit {
+  border-radius: 8px;
+  background: var(--white-color);
+  border: 1px solid var(--gray-color02);
+  overflow: hidden;
+}
+.service_faq_unit:not(:first-child) {
+  margin-top: 48px;
+}
+
+.service_faq-question {
+  padding: 16px;
+  display: flex;
+  width: 100%;
+}
+.service_faq-question_tag {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.service_faq-question_txt {
+  font-weight: bold;
+  margin-left: 16px;
+  width: 100%;
+  text-align: left;
+}
+.service_faq-question_mark {
+  flex-shrink: 0;
+  position: relative;
+  width: 16px;
+  margin: auto 0 auto 8px;
+}
+.service_faq-question_mark::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+/* コード上だと全てプラスマークになっていますがJavaScriptの授業で切り替えを行います。 */
+.service_faq-question_mark::after {
+  content: "";
+  width: 2px;
+  height: 16px;
+  background: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service_faq-answer {
+  padding: 16px 48px 16px 16px;
+  display: flex;
+  width: 100%;
+  border-top: 1px solid var(--gray-color02);
+}
+.service_faq-answer_tag {
+  color: var(--white-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--primary-color);
+}
+
+.service_faq-answer_txt {
+  width: 100%;
+  margin-left: 16px;
+}
