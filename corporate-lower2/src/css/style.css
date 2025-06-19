@@ -759,4 +759,66 @@ body {
 
 /* ---------- company ---------- */
 
+.company_section:nth-of-type(2) {
+  background: var(--gray-color02);
+}
+
+.company_section_title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.company_section_title::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 32px;
+  background: var(--primary-color);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.company_section_img-wrapper {
+  margin-top: 32px;
+}
+
+.company_section_txt {
+  margin-top: 32px;
+}
+
+.company_section_table {
+  margin-top: 40px;
+}
+
+.company_section_tr:nth-child(2n) {
+  background: var(--gray-color02);
+}
+
+.company_section_th {
+  font-weight: bold;
+  width: 124px;
+  padding: 16px 0 16px 8px;
+  position: relative;
+}
+
+.company_section_th::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background-color: var(--primary-color);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.company_section_td {
+  padding: 16px 8px 16px 32px;
+  font-size: 16px;
+}
+
+
 /* ---------- contact ---------- */
